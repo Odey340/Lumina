@@ -18,8 +18,7 @@ Based on our latest production profiling:
 - **System Calls**: < 0.1% (Kernel Bypass enabled)
 - **Context Switches**: 0.0% (Dedicated core isolation via `taskset`)
 - **Memory Management**: Zero-allocation hot path using custom linear allocators on Huge Pages.
-
-![Flame Graph](Benchmarks/flamegraph.png) 
+ 
 *(Visualization: Optimized execution path highlighting SIMD-accelerated Z-Score calculations and lock-free orderflow ingestion.)*
 
 ## 📂 Project Structure
